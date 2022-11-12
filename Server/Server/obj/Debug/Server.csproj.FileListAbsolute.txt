@@ -19,3 +19,10 @@ C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Se
 C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\ref\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
 C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\ref\Server\Server\obj\Debug\Server.exe
 C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\ref\Server\Server\obj\Debug\Server.pdb
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Server\Server\bin\Debug\Server.exe.config
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Server\Server\bin\Debug\Server.exe
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Server\Server\bin\Debug\Server.pdb
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Server\Server\obj\Debug\Server.exe
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Server\Server\obj\Debug\Server.pdb

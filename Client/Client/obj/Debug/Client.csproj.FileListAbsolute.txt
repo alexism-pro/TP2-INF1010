@@ -66,3 +66,20 @@ C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Se
 C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\untouched-ref - Copy\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
 C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\untouched-ref - Copy\Client\Client\obj\Debug\Client.exe
 C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\untouched-ref - Copy\Client\Client\obj\Debug\Client.pdb
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\bin\Debug\Client.exe.config
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\bin\Debug\Client.exe
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\bin\Debug\Client.pdb
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Chat.g.cs
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\MainWindow.g.cs
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\App.g.cs
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Client_MarkupCompile.cache
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Client_MarkupCompile.lref
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Chat.baml
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\MainWindow.baml
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Client.g.resources
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Client.exe
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\working-repo-tp2\Client\Client\obj\Debug\Client.pdb

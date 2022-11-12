@@ -35,26 +35,20 @@ namespace Client
             DataContext = this;
             InitializeComponent();
             LblWelcome.Content = "Bienvenue " + username;
-            TbDiscussion.AppendText("Vous avez joint la discussion.\n");
+            TxtBoxDiscussion.AppendText("Nouvelle discussion...\n");
 
             //Création d'un thread écoutant le serveur
-            this._client = client;
+            _client = client;
             _listener = new Thread(() => ServerListener());
             _listener.Start();
         }
 
-        private void OnKeyDownHandler(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Return)
-                btnSendMessage_Click(sender, e);
-        }
-
         private void btnSendMessage_Click(object sender, RoutedEventArgs e)
         {
-            if (TbMessage.Text.ToLower() == "list")
+            if (TxtBoxMessage.Text.ToLower() == "list")
             {
                 SendPacketToServer("LIST");
-                TbMessage.Text = "";
+                TxtBoxMessage.Text = "";
                 return;
             }
 
@@ -67,14 +61,13 @@ namespace Client
 
             if (list == "")
             {
-                TbMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "Aucun destinataire n'est sélectionné.\n", Brushes.Purple);
+                TxtBoxMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "Aucun destinataire n'est sélectionné.\n", Brushes.Black);
                 return;
             }
 
-            SendPacketToServer("MSG$#END#$" + list.Remove(list.Length - 1) + "$#END#$" + TbMessage.Text);
-            TbMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "À " + displayList.Remove(displayList.Length - 2, 2) + " : ", Brushes.Red);
-            TbMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), TbMessage.Text + "\n", Brushes.Black);
-            TbMessage.Text = "";
+            SendPacketToServer("MSG$#END#$" + list.Remove(list.Length - 1) + "$#END#$" + TxtBoxMessage.Text);
+            TxtBoxMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "À " + displayList.Remove(displayList.Length - 2, 2) + " : " + TxtBoxMessage.Text + "\n", Brushes.Red);
+            TxtBoxMessage.Text = "";
         }
 
         private void ServerListener()
@@ -91,15 +84,14 @@ namespace Client
                     {
                         // Lorsque l'on reçoit un message
                         case "MSG":
-                            TbMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "De " + elements[1] + " : ", Brushes.Blue);
-                            TbMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), elements[2] + "\n", Brushes.Black);
+                            TxtBoxMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "De " + elements[1] + " : " + elements[2] + "\n", Brushes.Orange);
                             break;
 
                         // Lorsqu'un utilisateur se connecte
                         case "CONN":
                             lock (_lockObject)
                                 Items.Add(elements[1]);
-                            TbMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "Connexion de " + elements[1] + "\n", Brushes.Green);
+                            TxtBoxMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "Connexion de " + elements[1] + "\n", Brushes.Red);
                             break;
 
                         // Lors de la connexion d'utilisateurs, pour les ajouter à notre liste d'utilisateurs disponibles
@@ -112,14 +104,14 @@ namespace Client
 
                         // Lorsque l'on reçoit la liste des utilisateurs connectés
                         case "LISTING":
-                            TbMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "Utilisateurs connectés :  " + elements[1] + "\n", Brushes.Green);
+                            TxtBoxMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "Utilisateurs connectés :  " + elements[1] + "\n", Brushes.Red);
                             break;
 
                         // Lorsqu'un autre utilisateur se déconnecte
                         case "LOGOUT":
                             lock (_lockObject)
                                 Items.Remove(elements[1]);
-                            TbMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "Déconnexion de " + elements[1] + "\n", Brushes.Green);
+                            TxtBoxMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "Déconnexion de " + elements[1] + "\n", Brushes.Red);
                             break;
 
                     }
@@ -133,9 +125,7 @@ namespace Client
             }
         }
 
-        public delegate void ServerDownCall();
-
-        public delegate void UpdateTextCallback(string message, SolidColorBrush color);
+        private delegate void UpdateTextCallback(string message, SolidColorBrush color);
 
         private void ServerIsDown()
         {
@@ -145,28 +135,24 @@ namespace Client
 
         private void UpdateText(string message, SolidColorBrush color)
         {
-            TextRange tr = new TextRange(TbDiscussion.Document.ContentEnd, TbDiscussion.Document.ContentEnd);
-            tr.Text = message;
+            var tr = new TextRange(TxtBoxDiscussion.Document.ContentEnd, TxtBoxDiscussion.Document.ContentEnd)
+            {
+                Text = message
+            };
             tr.ApplyPropertyValue(TextElement.ForegroundProperty, color);
         }
 
         private void SendPacketToServer(string message)
         {
-            StreamWriter sw = new StreamWriter(_client.GetStream());
+            var sw = new StreamWriter(_client.GetStream());
             sw.WriteLine(message);
             sw.Flush();
         }
 
         #region XAML methods
-        private void btnSelectAll_Click(object sender, RoutedEventArgs e)
-        {
-            UsersList.SelectAll();
-        }
+        private void btnSelectAll_Click(object sender, RoutedEventArgs e) => UsersList.SelectAll();
 
-        private void btnLogout_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
+        private void btnLogout_Click(object sender, RoutedEventArgs e) => Close();
 
         // Libérer les ressources/listener
         private void ChatClosing(object sender, CancelEventArgs e)
