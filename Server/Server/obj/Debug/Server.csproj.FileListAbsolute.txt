@@ -1,0 +1,21 @@
+C:\Users\Hyacinthe Brochu\Desktop\TPClientServer\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Hyacinthe Brochu\Desktop\TPClientServer\Server\Server\bin\Debug\Server.exe
+C:\Users\Hyacinthe Brochu\Desktop\TPClientServer\Server\Server\bin\Debug\Server.pdb
+C:\Users\Hyacinthe Brochu\Desktop\TPClientServer\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\Hyacinthe Brochu\Desktop\TPClientServer\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Hyacinthe Brochu\Desktop\TPClientServer\Server\Server\obj\Debug\Server.exe
+C:\Users\Hyacinthe Brochu\Desktop\TPClientServer\Server\Server\obj\Debug\Server.pdb
+C:\Users\card\Desktop\TP2Chat-master\Server\Server\bin\Debug\Server.exe.config
+C:\Users\card\Desktop\TP2Chat-master\Server\Server\bin\Debug\Server.exe
+C:\Users\card\Desktop\TP2Chat-master\Server\Server\bin\Debug\Server.pdb
+C:\Users\card\Desktop\TP2Chat-master\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\card\Desktop\TP2Chat-master\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\card\Desktop\TP2Chat-master\Server\Server\obj\Debug\Server.exe
+C:\Users\card\Desktop\TP2Chat-master\Server\Server\obj\Debug\Server.pdb
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\ref\Server\Server\bin\Debug\Server.exe.config
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\ref\Server\Server\bin\Debug\Server.exe
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\ref\Server\Server\bin\Debug\Server.pdb
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\ref\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\ref\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\ref\Server\Server\obj\Debug\Server.exe
+C:\Users\AlexisNVMe\OneDrive - Université du Québec à Trois-Rivières\UQTR\Session3\INF1010\TP2\ref\Server\Server\obj\Debug\Server.pdb
