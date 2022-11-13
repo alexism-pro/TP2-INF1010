@@ -16,7 +16,7 @@ namespace Client
     /// <summary>
     /// Interaction logic for Chat.xaml
     /// </summary>
-    public partial class Chat : Window
+    public partial class Chat
     {
         private readonly TcpClient _client;
         private readonly Thread _listener;
@@ -28,7 +28,7 @@ namespace Client
         public Chat(string username, TcpClient client)
         {
             _lockObject = new object();
-            Items = new ObservableCollection<string>() { };
+            Items = new ObservableCollection<string>();
             BindingOperations.EnableCollectionSynchronization(Items, _lockObject);
 
             //Affichage interface
@@ -113,12 +113,12 @@ namespace Client
                                 Items.Remove(elements[1]);
                             TxtBoxMessage.Dispatcher.Invoke(new UpdateTextCallback(UpdateText), "Déconnexion de " + elements[1] + "\n", Brushes.Red);
                             break;
-
                     }
                 }
                 // Si le serveur crash ou se ferme
                 catch (IOException)
                 {
+                    _serverCrashed = true;
                     Dispatcher.Invoke(ServerIsDown);
                     break;
                 }
